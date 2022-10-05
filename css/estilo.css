@@ -1,0 +1,543 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: url(../imagens/home-img.jpeg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+.subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    height: 30px;
+    text-transform: uppercase;
+    margin:50px 0px 30px 0px;
+}
+.subtitle h2{
+    color: white;
+    font-size: 30px;
+}
+.subtitle span{
+    color: #d3ad7f;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+/* Header: Logo e Menu */
+header{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:  2px solid rgba(83, 81, 81, 0.63);
+}
+.img{
+    height: 50px;
+    margin-left: 20px;
+}
+.icons{
+    margin-left: 140px;
+    width: 150px;
+}
+.icons img{
+    height: 30px;
+    padding: 0px 6px;
+    cursor: pointer;
+} 
+.sidebar{
+    display: flex;
+    height: 450px;
+}
+/* Fim do Header */
+
+/* Área do carrinho, search e menu que aparecem ao clicar nos icones */
+.search{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    margin-top: -130px;
+    transition: all .1s ease-in-out;
+}
+.search input{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+.menu{
+    color: black;
+    background-color: white;
+    width: 100%;
+    height: 450px;
+    margin-top: -530px;
+    transition: all .1s ease-in-out;
+    position: absolute;
+}
+.menu  ul li{
+    border-bottom: 2px solid rgb(164, 160, 160);
+    font-size: 20px;
+    margin-left: -20px;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    padding: 30px 0px 0px 0px;
+}
+.menu  ul li a{
+    color: black;
+    text-decoration: none;
+}
+.carrinho{
+    display: flex;
+    flex-direction: column;
+    margin-top: -930px;
+    background-color: white;
+    height: 400px;
+    transition: all .1s ease-in-out;
+    position: absolute;
+    width: 100%;
+}
+.item--one{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:  1px solid rgb(114, 111, 111);
+}
+.item--one-img1{
+    margin-left: 10px;
+    height: 60px;
+}
+.price-number--p{
+    display: flex;
+    width: 200px;
+}
+.item--one-p1{
+    font-weight: bold;
+    margin-left: 10px;
+}
+.item--one-p2{
+    margin-top: 30px;
+    margin-left: -85px;
+    color: #d3ad7f;
+}
+.item--one-img2{
+    height: 20px;
+    margin-top: -15px;
+    margin-right: 20px;
+}
+/* Fim da área do carrinho */
+
+/* Área do corpo da página */
+/* Área da primeira Section */
+main .section-one{
+    margin-top: -260px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+main .section-one h1{
+    text-transform: uppercase;
+    color: white;
+    font-size: 43px;
+}
+main .section-one p{
+    margin-top: -10px;
+    color: rgba(255, 255, 255, 0.625);
+}
+main .section-one a{
+    width: 100px;
+    color: white;
+    text-decoration: none;
+    padding: 6px 20px;
+    background-color: #d3ad7f;
+}
+/* Fim da área da primeira section */
+
+/* Área do subtitulo one */
+.subtitle-one{
+    margin-top: 400px;
+}
+/* Fim da Área do subtitulo one */
+
+/* Área da segunda section */
+.section-two-card{
+    margin-top: -4px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(26, 26, 67, 0.293);
+}
+.cards{
+    width: 100%;
+}
+.cards img{
+    width: 100%;
+    height: 100%;
+}
+.section-two-card-text{
+    display: flex;
+    flex-direction:column;
+}
+.section-two-card h3{
+    margin-top: 5px;
+    font-size: 30px;
+    color: white;
+    margin-left: 10px;
+}
+.p{
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0px 10px 0px 10px;
+}
+.section-two-card-text a{
+    text-align: center;
+    width: 100px;
+    color: white;
+    text-decoration: none;
+    padding: 6px 20px;
+    background-color: #d3ad7f;
+    margin: 30px 0px 20px 10px;
+}
+/* Fim da área da segunda section */
+
+/* Área da section three */
+.section-three-p{
+    color: white;
+    font-weight: bold;
+} 
+.card-coffee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+    border:1px solid rgba(83, 81, 81, 0.63);
+}
+.card-coffee img{
+    margin-top: 30px;
+}
+.price{
+    margin-top: -20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+}
+.p1{
+    color: white;
+}
+.p2{
+    color: gray;
+    text-decoration: line-through;
+    margin-top: 19px;
+    font-size: 13px;
+}
+.card-coffee a{
+    text-align: center;
+    width: 100px;
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+    background-color: #d3ad7f;
+    margin-bottom: 30px;
+}
+.card-coffee a:hover{
+    background-color: rgba(244, 237, 237, 0.904);
+    color: black;
+    transition: all .2s ease-in-out;
+}
+/* Fim da área da section three*/
+
+/* Área da section for */
+.section-for-rowone{
+    border:  1px solid rgba(83, 81, 81, 0.63);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.section-for-icons img{
+    margin: 30px 0px 30px 0px;
+    border:  1px solid rgba(83, 81, 81, 0.63);
+    height: 30px;
+    padding: 10px;
+}
+.section-for-iconstars{
+    margin-top: -10px;
+}
+/* Fim da section for */
+
+/* Área da section five */
+.section-five-img{
+    margin-top: 30px;
+}
+.section-five-imgtwo img{
+    height: 80px;
+    border-radius: 40px;
+}
+.section-for-p{
+    color: white;
+    text-align: center;
+}
+.section-for-p2{
+    color: white;
+    font-weight: bold;
+}
+.section-five-iconstars{
+    margin-bottom: 30px;
+}
+/* Fim da section five */
+
+/* Área da section six */
+.section-six{
+    background-color: rgba(26, 26, 67, 0.293);
+}
+.section-six-title{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+input{
+    margin-bottom: 20px;
+    height: 40px;
+    background-color: transparent;
+    width: 80%;
+    border-bottom:1px solid rgb(114, 111, 111);
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    outline: 0;
+    color: white;
+}
+#form a{
+    text-align: center;
+    width: 100px;
+    color: white;
+    text-decoration: none;
+    padding: 6px 14px;
+    background-color: #d3ad7f;
+    margin-bottom: 20px;
+}
+/* Fim da section six */
+
+/* Área da section seven */
+.section-seven{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+}
+.section-seven-img{
+    width: 100%;
+}
+.section-seven img{
+    width: 100%;
+}
+.section-seven-p{
+    width: 100%;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.section-seven-ptwo{
+    color: #d3ad7f;
+    width: 100%;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+.section-seven-pthree{
+    margin-top: -10px;
+    color: white;
+    width: 100%;
+    margin-left: 20px;
+}
+.button{
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+}
+.button a{
+    width: 100px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 6px 14px;
+    background-color: #d3ad7f;
+    margin-left: 10px;
+}
+/* Fim da section seven */
+
+/* Área do footer */
+.footer{
+    background-color: rgba(26, 26, 67, 0.293);
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.footer-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.footer-icons img{
+    margin-left: 10px;
+    background-color: #d3ad7f;
+    border-radius:50px;
+    padding: 10px;
+    cursor: pointer;
+}
+.footer-paragrafo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.footer-paragrafo a{
+    border: 1px solid rgb(114, 111, 111);
+    padding: 6px;
+    text-decoration: none;
+    color:white;
+    margin-left: 5px;
+}
+.footer-paragrafo a:hover{
+    background-color: #d3ad7f;
+    transition: all .2s ease-in-out;
+}
+.footer-p{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-spanone{
+    color: #d3ad7f;
+}
+.footer-spantwo{
+    color: white;
+}
+.scrollButton img{
+    height: 70px;
+}
+.scrollButton{
+    height: 70px;
+    margin-top: 650px;
+    margin-left: 270px;
+    position: fixed;
+    cursor: pointer;
+}
+.menu-blocktwo{
+    display: none;
+
+}
+/* Fim da área do footer */
+@media (min-width:900px){
+    .section-two{
+        flex-direction: row;
+    }
+    .section-two-card{
+        margin-top: 0px;
+    }
+    .section-three-rowone{
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    .section-three-rowtwo{
+        margin: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 0px;
+    }
+    .card-coffee{
+        width: 30%;
+    }
+    .section-for{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .section-for-rowone{
+        width: 30%;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .section-five{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .section-five-rowone{
+        width: 30%;
+    }
+    .section-six{
+        flex-direction: row;
+    }
+    .section-six-rowone{
+        width: 50%;
+    }
+    .section-six-maps{
+        height: 100%;
+    }
+    iframe{
+        height: 100%;
+    }
+    .section-seven{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .scrollButton{
+        margin-left: 88em;
+    }
+
+    /* Alterações no menu */
+    .menu-block{
+        display: none;
+    }
+    .menu-blocktwo{
+        display: flex;
+        position: absolute;
+        margin-left: 200px;
+    }
+    .menu-blocktwo ul li{
+        display: inline;
+        border: transparent;
+        padding: 10px;
+    }
+    }
+    .menu-blocktwo ul li a{
+        color: white;
+    }
+    .menu-blocktwo ul li a:hover{
+        background-color: #d3ad7f;
+        transition: all .1s ease-in-out;
+    }
+    /* Fim das alterações */
